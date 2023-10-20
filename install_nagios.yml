@@ -1,0 +1,6 @@
+---
+- name: Install Nagios
+  hosts: all
+  roles:
+    - nagios
+

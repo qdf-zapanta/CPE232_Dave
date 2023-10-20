@@ -1,0 +1,6 @@
+[centos_servers]
+192.168.56.117 ansible_user=dzapanta
+
+[ubuntu_servers]
+127.0.0.1 ansible_user=dave
+

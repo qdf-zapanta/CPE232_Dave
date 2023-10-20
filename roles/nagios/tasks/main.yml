@@ -1,0 +1,17 @@
+---
+- name: Install Nagios for Ubuntu
+  become: true
+  when: ansible_distribution == "Ubuntu"
+  apt:
+    name:
+      - nagios4
+      - nagios-plugins
+
+- name: Install Nagios for CentOS
+  become: true
+  when: ansible_distribution == "CentOS"
+  yum:
+    name:
+      - epel-release
+      - nagios
+      - nagios-plugins-all
